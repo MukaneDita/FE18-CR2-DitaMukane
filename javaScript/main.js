@@ -15,12 +15,12 @@ for (let val of wTasks) {
         <ul class="list-group list-group-flush">
           <li class="list-group-item ">
             <i class="fa-solid fa-triangle-exclamation "style="width: 1rem"></i> 
-              <span class="fw-bold">Priority level:<p class="btn btn-success ms-1 h-auto "id="clickOnThis" likeBtn>${val.importance}</p></span><br>
+              <span class="fw-bold">Priority level:<p class="btn btn-success ms-1 h-auto likeBtn"" >${val.importance}</p></span><br>
               <i class="fa-solid fa-map-location-dot"></i> 
               <span class="fw-bold">Location:</span> ${val.location}</li>
           <li class="list-group-item text-end"> 
-            <p class="btn btn-danger  h-auto"id="buttons" likeBtn><i class="bi bi-trash3-fill"></i> Delete </p>
-            <p class="btn btn-success h-auto"  id="buttons" likeBtn><i class="bi bi-check-circle-fill"></i> Done</p>
+            <p class="btn btn-danger  h-auto"id="buttons" <i class="bi bi-trash3-fill"></i> Delete </p>
+            <p class="btn btn-success h-auto"  id="buttons" ><i class="bi bi-check-circle-fill"></i> Done</p>
           </li>
         </ul>
       </div>
@@ -30,18 +30,18 @@ for (let val of wTasks) {
 
 
 // its not working
-let btns = document.getElementsByName("likeBtn");
+let btns = document.getElementsByClassName("likeBtn");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-        wTasks[i].importance++;
-        console.log(wTasks[i].importance);
-        document.getElementById("clickOnThis")[i].innerHTML = wTasks[i].importance;
-    })
-    if (btns.length < 2) {
-        document.getElementById("clickOnThis").style.backgroundColor = "green";
-    } else if (btns.length < 4) {
-        document.getElementById("clickOnThis").style.backgroundColor = "yellow";
-    } else {
-        document.getElementById("clickOnThis").style.backgroundColor = "red";
-    }
+            wTasks[i].importance++;
+            console.log(wTasks[i].importance);
+            document.getElementsByClassName("likeBtn")[i].innerHTML = wTasks[i].importance;
+        })
+        // if (btns.length < 2) {
+        //     document.getElementById("clickOnThis").style.backgroundColor = "green";
+        // } else if (btns.length < 4) {
+        //     document.getElementById("clickOnThis").style.backgroundColor = "yellow";
+        // } else {
+        //     document.getElementById("clickOnThis").style.backgroundColor = "red";
+        // }
 }
