@@ -5,10 +5,10 @@ console.log(wTasks);
 for (let val of wTasks) {
     document.getElementById("tasks").innerHTML +=
         `<div  style=" padding-top: 2rem; padding-bottom: 2rem">
-        <div class="card p-2" style="width: 23rem; height: 47rem">
-        <li class="list-group-item"><span class="bg-primary text-white mb-2 py-0.75 px-1 rounded-2">Task</span></li>
-        <img src="${val.image}" class="card-img-top mt-1"  alt="${val.taskName}"> 
-        <div class="card-body text-center" >
+        <div class="card p-2 text-sm" style="width: 23rem">
+        <li class="list-group-item"><span class="bg-primary text-white mb-2 py-0.75 px-1 rounded-2">Task</span> <span></span></li>
+        <img src="${val.image}" class="card-img-top mt-1" style="height: 23rem" alt="${val.taskName}"> 
+        <div class="card-body text-center"  style="height: 10rem" >
           <h5 class="card-title">${val.taskName}</h5>
           <p class="card-text ">${val.description}</p>
         </div>
@@ -18,7 +18,7 @@ for (let val of wTasks) {
               <span class="fw-bold">Priority level:<p class="btn btn-success id="clickOnThis" h-auto" likeBtn>${val.importance}</p></span><br>
               <i class="fa-solid fa-map-location-dot"style="width:1rem;" ></i> 
               <span class="fw-bold">Location:</span> ${val.location}</li>
-          <li class="list-group-item float-end"> 
+          <li class="list-group-item text-end"> 
             <p class="btn btn-danger id="buttons" h-auto" likeBtn>Delete</p>
             <p class="btn btn-success id="buttons" h-auto" likeBtn>Done</p>
           </li>

@@ -9,13 +9,13 @@
      "image": "images/hydra.jpg",
      "location": "The swamp near Lake Lerna",
      "description": "Slay the Lernaean Hydra, which Hera had raised with the sole purpose of slaying me.",
-     "importance":3
+     "importance":0
  }, {
      "taskName": "Ceryneian Hind",
      "image": "images/hind.jpg",
      "location": "Ceryneia",
      "description": "Capture the Ceryneian Hind, a beast so fast it could outpace an arrow.",
-     "importance": 5
+     "importance": 0
  }, {
      "taskName": "Erymanthian Boar",
      "image": "images/boar.jpg",
