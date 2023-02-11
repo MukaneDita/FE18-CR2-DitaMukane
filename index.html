@@ -6,12 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly planner</title>
+    <script src="https://kit.fontawesome.com/25d35d8c20.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
 
 <body>
-    <script src="javaScript/weeklyTasks.json"></script>
+    <header>
+        <nav>
+            <div class="navBar">
+                <div class="check"><i class="fa-solid fa-list-check"></i>
+                </div>
+                <p class="palnner">MyPlaner</p>
+                <a class="navLink" id="links" href="#">Home</a>
+                <a class="navLink" id="links" href="#">Tasks</a>
+                <a class="navLink" id="links" href="#">Settings</a>
+                <div><i id="bell" class="fa-solid fa-bell"></i></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="row row-cols-3 " id="tasks"></div>
+
+
+
+
+    </main>
+
+    <div class="footerNav">
+        <div class="ikons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-github"></i>
+        </div><br>
+        <div id="subscribe">
+            <form action="">
+                <label for="fname">Sign up for our newsletter</label>
+                <input class="textField" type="text" id="signUp" name="signUp" value="">
+                <input class="subButton" type="submit" value="subscribe">
+            </form>
+        </div><br>
+        <div id="copyright">
+            <p>&copy; 2023 Copyright: Dita Mukane</p>
+
+        </div>
+    </div>
+
+    </footer>
+    JavaScript and Bootstrap -->
+    <script src="javaScript/weeklyTasks.js"></script>
     <script src="javaScript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>

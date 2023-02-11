@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+nav .navBar {
+  width: 100%;
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: black;
+  color: white;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: flex-start;
+}
+nav .navBar #check {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .navBar .planner {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .navBar .bell {
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: flex-end;
+}
+nav .navBar .navLink {
+  text-decoration: none;
+  color: white;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .navBar #links {
+  opacity: 50%;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+nav .navBar #links:hover {
+  opacity: 100%;
+}
+
+main {
+  width: 80%;
+}
+
+.footerNav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-size: small;
+}
+.footerNav i {
+  display: inline;
+  border: 1px solid white;
+  padding: 0.5rem;
+  margin: 0.1rem;
+}
+.footerNav #subscribe {
+  padding: 1rem;
+}
+.footerNav #subscribe .textField {
+  width: 25%;
+}
+.footerNav #subscribe .subButton {
+  width: 10%;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}/*# sourceMappingURL=main.css.map */
