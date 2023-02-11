@@ -14,21 +14,23 @@
             z-index: 1;
             color: white;
             margin-left: 3rem;
-            background-color: rgb(0, 0, 0 .50);
         }
     }
     
-    @media (min-width: 576px) {
-        .row {}
+    // @include media-breakpoint-up(sm) {
+    //     @include make-col(1);
+    // }
+    // @include media-breakpoint-up(md) {
+    //     @include make-col(2);
+    // }
+    @media screen and (max-width:480px) {
+        #tasks {
+            grid-template-columns: repeat(1fr);
+        }
     }
     
-    // @media screen and (max-width:480px) {
-    //     .row {
-    //         grid-template-columns: repeat(1fr);
-    //     }
-    // }
-    // @media screen and (min-width: 481px)and (max-width:1000px) {
-    //     .row {
-    //         grid-template-columns: repeat(1fr, 1fr);
-    //     }
-    // }
+    @media screen and (min-width: 481px)and (max-width:1000px) {
+        #tasks {
+            grid-template-columns: repeat(1fr, 1fr);
+        }
+    }
