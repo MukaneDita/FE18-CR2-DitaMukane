@@ -6,62 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weekly planner</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/25d35d8c20.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/main.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <div class="navBar">
-                <div class="check"><i class="fa-solid fa-list-check"></i>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="#">
+                        <i class="bi bi-list-check"></i>WeeklyPlaner
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
                 </div>
-                <p class="palnner">MyPlaner</p>
-                <a class="navLink" id="links" href="#">Home</a>
-                <a class="navLink" id="links" href="#">Tasks</a>
-                <a class="navLink" id="links" href="#">Settings</a>
-                <div><i id="bell" class="fa-solid fa-bell"></i></div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center">
+                    <!-- Notifications -->
+                    <div class="dropdown">
+                        <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-bell-fill" style="color: white;"></i>
+                            <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Right elements -->
             </div>
+            <!-- Container wrapper -->
         </nav>
+        <!-- Navbar -->
     </header>
+    <div class="hero">
+        <h1 class="heroText">Weekly planer</h1>
+    </div>
 
     <main>
 
-        <div class="row row-cols-3 " id="tasks"></div>
+
+        <p class="row row-cols-3 " id="tasks"></p>
 
 
 
 
     </main>
 
-    <div class="footerNav">
-        <div class="ikons">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-google"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin-in"></i>
-            <i class="fa-brands fa-github"></i>
-        </div><br>
-        <div id="subscribe">
-            <form action="">
-                <label for="fname">Sign up for our newsletter</label>
-                <input class="textField" type="text" id="signUp" name="signUp" value="">
-                <input class="subButton" type="submit" value="subscribe">
-            </form>
-        </div><br>
-        <div id="copyright">
-            <p>&copy; 2023 Copyright: Dita Mukane</p>
-
-        </div>
-    </div>
-
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-facebook-f "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-twitter "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-google "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-instagram "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-linkedin-in "></i></a>
+                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i class="fab fa-github "></i></a>
+            </section>
+            <!-- Section: Social media -->
+            <!-- Section: Form -->
+            <section class=" ">
+                <form action=" ">
+                    <!--Grid row-->
+                    <div class="row d-flex justify-content-center ">
+                        <!--Grid column-->
+                        <div class="col-auto ">
+                            <p class="pt-2 ">
+                                <strong>Sign up for our newsletter</strong>
+                            </p>
+                        </div>
+                        <div class="col-md-5 col-12 ">
+                            <div class="form-outline form-white mb-4 ">
+                                <input type="email " id="form5Example21 " class="form-control " />
+                                <label class="form-label " for="form5Example21 "></label>
+                            </div>
+                        </div>
+                        <div class="col-auto ">
+                            <button type="submit " class="btn btn-outline-light mb-4 ">Subscribe</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!-- Section: Form -->
+            <!-- Copyright -->
+            <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.2); ">
+                © 2023 Copyright: Dita Mukane
+            </div>
+            <!-- Copyright -->
     </footer>
+
     JavaScript and Bootstrap -->
-    <script src="javaScript/weeklyTasks.js"></script>
-    <script src="javaScript/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="javaScript/weeklyTasks.js "></script>
+    <script src="javaScript/main.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js " integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN " crossorigin="anonymous "></script>
 </body>
 
 </html>
