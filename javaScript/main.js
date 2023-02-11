@@ -5,8 +5,8 @@ console.log(wTasks);
 for (let val of wTasks) {
     document.getElementById("tasks").innerHTML +=
         `<div  style=" padding-top: 2rem; padding-bottom: 2rem">
-        <div class="card p-2 text-sm" style="width: 23rem">
-        <li class="list-group-item"><span class="bg-primary text-white mb-2 py-0.75 px-1 rounded-2">Task</span> <span></span></li>
+        <div class="card p-2 text-sm shadow p-3 mb-5 bg-body rounded" style="width: 23rem ">
+        <li class="list-group-item"><span class="bg-dark text-white mb-2 py-1 px-1 rounded-1">Task</span> <span class="float-end"><i class="bi bi-bookmark "></i><i class="bi bi-three-dots-vertical"></i></span></li>
         <img src="${val.image}" class="card-img-top mt-1" style="height: 23rem" alt="${val.taskName}"> 
         <div class="card-body text-center"  style="height: 10rem" >
           <h5 class="card-title">${val.taskName}</h5>
@@ -15,17 +15,21 @@ for (let val of wTasks) {
         <ul class="list-group list-group-flush">
           <li class="list-group-item ">
             <i class="fa-solid fa-triangle-exclamation "style="width: 1rem"></i> 
-              <span class="fw-bold">Priority level:<p class="btn btn-success id="clickOnThis" h-auto" likeBtn>${val.importance}</p></span><br>
-              <i class="fa-solid fa-map-location-dot"style="width:1rem;" ></i> 
+              <span class="fw-bold">Priority level:<p class="btn btn-success ms-1 h-auto "id="clickOnThis" likeBtn>${val.importance}</p></span><br>
+              <i class="fa-solid fa-map-location-dot"></i> 
               <span class="fw-bold">Location:</span> ${val.location}</li>
           <li class="list-group-item text-end"> 
-            <p class="btn btn-danger id="buttons" h-auto" likeBtn>Delete</p>
-            <p class="btn btn-success id="buttons" h-auto" likeBtn>Done</p>
+            <p class="btn btn-danger  h-auto"id="buttons" likeBtn><i class="bi bi-trash3-fill"></i> Delete </p>
+            <p class="btn btn-success h-auto"  id="buttons" likeBtn><i class="bi bi-check-circle-fill"></i> Done</p>
           </li>
         </ul>
       </div>
       </div>`;
 }
+
+
+
+// its not working
 let btns = document.getElementsByName("likeBtn");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
