@@ -17,21 +17,3 @@
             margin-left: 3rem;
         }
     }
-    
-    // @include media-breakpoint-up(sm) {
-    //     @include make-col(1);
-    // }
-    // @include media-breakpoint-up(md) {
-    //     @include make-col(2);
-    // }
-    @media screen and (max-width:480px) {
-        #tasks {
-            grid-template-columns: repeat(1fr);
-        }
-    }
-    
-    @media screen and (min-width: 481px)and (max-width:1000px) {
-        #tasks {
-            grid-template-columns: repeat(1fr, 1fr);
-        }
-    }

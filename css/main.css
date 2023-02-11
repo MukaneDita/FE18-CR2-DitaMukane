@@ -16,15 +16,4 @@
   z-index: 1;
   color: white;
   margin-left: 3rem;
-}
-
-@media screen and (max-width: 480px) {
-  #tasks {
-    grid-template-columns: repeat(1fr);
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1000px) {
-  #tasks {
-    grid-template-columns: repeat(1fr, 1fr);
-  }
 }/*# sourceMappingURL=main.css.map */
