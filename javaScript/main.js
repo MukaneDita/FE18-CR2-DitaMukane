@@ -33,15 +33,15 @@ for (let val of wTasks) {
 let btns = document.getElementsByClassName("likeBtn");
 for (let i = 0; i < btns.length; i++) {
     btns[i].addEventListener("click", function() {
-            wTasks[i].importance++;
-            console.log(wTasks[i].importance);
-            document.getElementsByClassName("likeBtn")[i].innerHTML = wTasks[i].importance;
-        })
-        // if (btns.length < 2) {
-        //     document.getElementById("clickOnThis").style.backgroundColor = "green";
-        // } else if (btns.length < 4) {
-        //     document.getElementById("clickOnThis").style.backgroundColor = "yellow";
-        // } else {
-        //     document.getElementById("clickOnThis").style.backgroundColor = "red";
-        // }
+        wTasks[i].importance++;
+        console.log(wTasks[i].importance);
+        document.getElementsByClassName("likeBtn")[i].innerHTML = wTasks[i].importance;
+        if (btns[i] < 2) {
+            btns[i].style.backgroundColor = "green";
+        } else if (btns[i] < 4) {
+            btns[i].style.backgroundColor = "yellow";
+        } else {
+            btns[i].style.backgroundColor = "red";
+        }
+    })
 }
