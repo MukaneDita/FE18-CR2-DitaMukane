@@ -36,9 +36,9 @@ for (let i = 0; i < btns.length; i++) {
         wTasks[i].importance++;
         console.log(wTasks[i].importance);
         document.getElementsByClassName("likeBtn")[i].innerHTML = wTasks[i].importance;
-        if (btns[i] < 2) {
+        if (wTasks[i].importance < 2) {
             btns[i].style.backgroundColor = "green";
-        } else if (btns[i] < 4) {
+        } else if (wTasks[i].importance < 4) {
             btns[i].style.backgroundColor = "yellow";
         } else {
             btns[i].style.backgroundColor = "red";
