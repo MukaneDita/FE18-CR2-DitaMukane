@@ -52,4 +52,22 @@
      "location": "Themiscyra on the south coast of the Black Sea",
      "description": "Retrieve the Belt of Hippolyta, queen of the Amazons.",
      "importance": 0
+ }, {
+     "taskName": " Cattle of Geryon",
+     "image": "images/cattle.jpg",
+     "location": "Erytrea",
+     "description": "Obtain the Cattle of the three-bodied giant Geryon.",
+     "importance": 0
+ }, {
+     "taskName": "Golden Apples of the Hesperides",
+     "image": "images/apples.jpg",
+     "location": "Near Iberia",
+     "description": "Steal three of the golden apples from the garden of the Hesperides.",
+     "importance": 0
+ }, {
+     "taskName": "Cerberus",
+     "image": "images/cerberus.jpg",
+     "location": "The gates of the Underworld",
+     "description": "Capture and bring back Cerberusthe multi-headed dog.",
+     "importance": 0
  }]`

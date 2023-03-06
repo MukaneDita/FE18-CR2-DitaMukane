@@ -51,9 +51,12 @@ for (let i = 0; i < btns.length; i++) {
             btns[i].style.backgroundColor = "green";
         } else if (wTasks[i].importance < 4) {
             btns[i].style.backgroundColor = "yellow";
-        } else {
+        } else if (wTasks[i].importance >= 4 && wTasks[i].importance <= 5) {
             btns[i].style.backgroundColor = "red";
         }
+        //  else if (wTasks[i].importance >= 5) {
+        //     wTasks[i].importance = 0;
+        // }
     })
 };
 
