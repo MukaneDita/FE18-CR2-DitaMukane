@@ -6,14 +6,24 @@
 
 .hero {
   width: 100%;
-  height: 25rem;
+  height: 30rem;
   display: flex;
   align-items: center;
-  background-image: url("../images/hercules2.jpg");
-  margin-bottom: 3rem;
+  background-image: url("/images/herculesNew.jpg");
 }
 .hero .heroText {
   z-index: 1;
+  color: rgb(0, 0, 0);
+  margin-left: 8rem;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h4 {
+  background-color: rgb(33, 37, 41);
   color: white;
-  margin-left: 3rem;
+  text-align: center;
+  width: 100%;
+  padding: 2rem;
 }/*# sourceMappingURL=main.css.map */

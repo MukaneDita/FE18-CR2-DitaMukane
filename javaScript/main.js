@@ -5,9 +5,9 @@ console.log(wTasks);
 for (let val of wTasks) {
     document.getElementById("tasks").innerHTML +=
         `<div  style=" padding-top: 2rem; padding-bottom: 2rem">
-        <div class="card p-2 text-sm shadow p-3 mb-5 bg-body rounded" style="width: 23rem ">
+        <div class="card p-2 text-sm shadow p-3 mb-5 bg-body rounded" style="width: 25rem; height: 40rem;">
         <li class="list-group-item"><span class="bg-dark text-white mb-2 py-1 px-1 rounded-1">Task</span> <span class="float-end"><i class="bi bi-bookmark "></i><i class="bi bi-three-dots-vertical"></i></span></li>
-        <img src="${val.image}" class="card-img-top mt-1" style="height: 23rem" alt="${val.taskName}"> 
+        <img src="${val.image}" class="card-img-top mt-1"  alt="${val.taskName}"> 
         <div class="card-body text-center"  style="height: 10rem" >
           <h5 class="card-title">${val.taskName}</h5>
           <p class="card-text ">${val.description}</p>
@@ -15,17 +15,28 @@ for (let val of wTasks) {
         <ul class="list-group list-group-flush">
           <li class="list-group-item ">
             <i class="fa-solid fa-triangle-exclamation "style="width: 1rem"></i> 
-              <span class="fw-bold">Priority level:<p class="btn btn-success ms-1 h-auto likeBtn"" >${val.importance}</p></span><br>
+              <span class="fw-bold">Priority level:<p class="btn btn-success ms-1 h-auto likeBtn"" >${val.importance}</p>
+<i class="minus fs-5 bi bi-dash-circle-fill"></i>
+  </span><br>
               <i class="fa-solid fa-map-location-dot"></i> 
               <span class="fw-bold">Location:</span> ${val.location}</li>
           <li class="list-group-item text-end"> 
-            <p class="btn btn-danger  h-auto"id="buttons" <i class="bi bi-trash3-fill"></i> Delete </p>
+            <p class="del btn btn-danger  h-auto"id="buttons" <i class="bi bi-trash3-fill"></i> Delete </p>
             <p class="btn btn-success h-auto"  id="buttons" ><i class="bi bi-check-circle-fill"></i> Done</p>
           </li>
         </ul>
       </div>
       </div>`;
-}
+
+    const minusBtns = document.querySelectorAll(".minus");
+    minusBtns.forEach((btns, i) => {
+        btns.addEventListener("click", () => {
+            minusImportannce(i);
+        });
+    });
+
+
+};
 
 
 
@@ -44,4 +55,22 @@ for (let i = 0; i < btns.length; i++) {
             btns[i].style.backgroundColor = "red";
         }
     })
-}
+};
+
+const minusImportannce = (index) => {
+    if (wTasks[index].importance == 1) {
+        btns.splice(index, 1);
+    } else {
+        wTasks[index].importance--;
+    }
+    cartTotal();
+};
+
+// <
+// div class = "text-center m-0 cart-quantity h4 w-25" > $ {
+//         item.qtty
+//     } < /div> <
+//     div class = "d-flex" >
+//     <
+//     i class = "minus fs-5 bi bi-dash-circle-fill" > < /i> <
+//     /div>

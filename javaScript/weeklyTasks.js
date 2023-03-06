@@ -1,6 +1,6 @@
  let weeklyTasks = `[{
      "taskName": "Nemean lion",
-     "image": "images/nemeanLion.jpg",
+     "image": "images/lion.jpg",
      "location": "Nemea",
      "description": "Slay the Nemean lion and return alive within 7 days.",
      "importance": 0
@@ -48,7 +48,7 @@
      "importance": 0
  }, {
      "taskName": "Hippolyta",
-     "image": "images/Hippolyte.jpg",
+     "image": "images/hyppolite.jpg",
      "location": "Themiscyra on the south coast of the Black Sea",
      "description": "Retrieve the Belt of Hippolyta, queen of the Amazons.",
      "importance": 0
