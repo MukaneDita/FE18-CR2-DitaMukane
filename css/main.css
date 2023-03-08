@@ -26,4 +26,21 @@ h4 {
   text-align: center;
   width: 100%;
   padding: 2rem;
+}
+
+.container1 {
+  height: 4rem;
+  width: 100%;
+  position: relative;
+}
+
+#sort {
+  position: absolute;
+  right: 5%;
+  width: 5rem;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  background-color: white;
 }/*# sourceMappingURL=main.css.map */
