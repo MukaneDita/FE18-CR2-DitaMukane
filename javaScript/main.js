@@ -107,7 +107,7 @@ function createHTML() {
 
 
 
-    // its not working
+
     let btns = document.getElementsByClassName("likeBtn");
     for (let i = 0; i < btns.length; i++) {
         btns[i].addEventListener("click", function() {
