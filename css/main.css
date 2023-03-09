@@ -9,7 +9,7 @@
   height: 30rem;
   display: flex;
   align-items: center;
-  background-image: url("images/herculesNew.jpg");
+  background-image: url("/../images/herculesNew.jpg");
 }
 .hero .heroText {
   z-index: 1;
